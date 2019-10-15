@@ -1,0 +1,18 @@
+<div class="container">
+    <h1> What to do next...</h1>
+
+    <form (submit)="addTodo($event)">
+            <div class="form-group">
+            <label for="input1">Next todo</label>
+            <input type="text" class="form-control" id="input1"  name ="input1" [(ngModel)]="input1" aria-describedby="emailHelp" placeholder="Type text here">
+            <small id="emailHelp" class="form-text text-muted">An organized agenda is a good point to start from.</small>
+            </div>
+            <button (click)="notifyEvent()" type="button" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+<div [hidden]="!input1">
+        <!-- Another two-way binding example -->
+        Typing: {{ input1 }}
+</div>
+
