@@ -22,7 +22,7 @@ export class TodolistComponent implements OnInit {
 
   addTodo(event) {
     this.todoObj = {
-      newTodo: this.input1,
+      input1: this.input1,
       completed: false
     }
     this.todos.push(this.todoObj);
