@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { WawawaComponent } from './componenti/wawawa/wawawa.component';
 import { HeaderComponent } from './componenti/header/header.component';
+
+import { LoginComponent } from './componenti/login/login.component';
+import { ProductsComponent } from './products/products.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+
     WawawaComponent,
-    HeaderComponent
+    HeaderComponent,
+
+    LoginComponent,
+    ProductsComponent
+
   ],
   imports: [
     BrowserModule,
