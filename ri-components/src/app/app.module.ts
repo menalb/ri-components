@@ -6,12 +6,31 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './componenti/login/login.component';
 import { TodolistComponent } from './componenti/todolist/todolist.component';
+import { HeaderComponent } from './componenti/header/header.component';
+import { ListComponent } from './list/list.component';
+
+import { WawawaComponent } from './componenti/wawawa/wawawa.component';
+
+
+import { ProductsComponent } from './products/products.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TodolistComponent
+    TodolistComponent,
+
+
+    WawawaComponent,
+    HeaderComponent,
+
+    LoginComponent,
+    ProductsComponent,
+    ListComponent
+
+
+
   ],
   imports: [
     BrowserModule,
