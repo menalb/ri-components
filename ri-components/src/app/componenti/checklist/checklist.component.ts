@@ -8,11 +8,19 @@ import { Input } from '@angular/core';
 })
 export class ChecklistComponent implements OnInit {
 
-  @Input('todos') todos: string;
+  @Input('todos') todos;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  deleteSelectedTodos() {
+    
+    for(var i=(this.todos.length -1); i > -1; i--) {
+      if(this.todos[i].completed) {
+        this.todos.splice(i, 1);
+      }
+    }
+  }
 }

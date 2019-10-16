@@ -7,7 +7,7 @@
             <input type="textfield" class="form-control" (keyup.enter)="input1=''" name ="input1" [(ngModel)]="input1" aria-describedby="emailHelp" placeholder="Type text here">
             <small id="addHelp" class="form-text text-muted">An organized agenda is a good point to start from.</small>
             </div>
-            <button (click)="notifyEvent()" type="submit" [disabled]="newTodo===''" class="btn btn-success">Submit</button>
+            <button (click)="notifyEvent()" type="submit" [disabled]="input1===''" class="btn btn-success">Submit</button>
     </form>
 </div>
 

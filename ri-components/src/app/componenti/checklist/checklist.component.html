@@ -1,5 +1,5 @@
 
-
+&nbsp;
 <div class="container">
         <table>
             <thead>    </thead>
@@ -8,6 +8,9 @@
                         <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" />
                             <span [ngClass]="{'checked': todo.completed}">{{ todo.input1 }} </span>
                 </tr>
+                <tr>
+                        <button (click)="deleteSelectedTodos()" class="btn btn-info" ng-model="button" ng-disabled="checked">Delete Selected Elements </button>
+                </tr> 
             </tbody>
         </table>
 </div>
