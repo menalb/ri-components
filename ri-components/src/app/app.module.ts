@@ -13,6 +13,7 @@ import { WawawaComponent } from './componenti/wawawa/wawawa.component';
 
 
 import { ProductsComponent } from './products/products.component';
+import { ChecklistComponent } from './componenti/checklist/checklist.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProductsComponent } from './products/products.component';
 
     LoginComponent,
     ProductsComponent,
-    ListComponent
+    ListComponent,
+    ChecklistComponent
 
 
 

@@ -12,14 +12,4 @@
 </div>
 
 
-
-<div class="container">
-    <table>
-        <thead>    </thead>
-        <tbody>
-            <tr *ngFor="let todo of todos" >
-                    <span [ngClass]="{'checked': todo.completed}">{{ todo.input1 }} </span>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<app-checklist [todos]="todos"></app-checklist>

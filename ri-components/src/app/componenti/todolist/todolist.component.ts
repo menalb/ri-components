@@ -28,6 +28,7 @@ export class TodolistComponent implements OnInit {
     this.todos.push(this.todoObj);
     this.input1 = '';
     event.preventDefault();
+    return this.todos;
   }
 
   ngOnInit() {
